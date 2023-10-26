@@ -83,3 +83,7 @@ export class LoginPage implements OnInit {
   async Recuperar() {
   }
 }
+almacenarUsuario(nombre, password) {
+  this.dbService.almacenarUsuario(nombre, password);
+}
+}
