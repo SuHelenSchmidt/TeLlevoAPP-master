@@ -9,8 +9,18 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: '',
+    path: 'login',
     redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'inicio',
+    redirectTo: 'inicio',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: 'e404',
     pathMatch: 'full'
   },
   {
