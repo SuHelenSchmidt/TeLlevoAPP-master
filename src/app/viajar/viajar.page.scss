@@ -1,0 +1,33 @@
+ion-header[translucent="true"] {
+    --ion-background-color: #ff3d00; // Color de fondo del encabezado (naranja)
+    --ion-color-base: #fff; // Texto en blanco en el encabezado
+    --ion-color-contrast: #fff; // Iconos en blanco en el encabezado
+    border: none; // Elimina el borde del encabezado si es necesario
+    box-shadow: none; // Elimina la sombra del encabezado si es necesario
+  }
+  
+  ion-toolbar {
+    --ion-color-base: #fff; // Texto en blanco en la barra de herramientas
+    --ion-background-color: transparent; // Fondo transparente en la barra de herramientas
+    border: none; // Elimina el borde de la barra de herramientas si es necesario
+    ion-button {
+      --ion-color-base: #fff; // Color de texto del botón en blanco
+      --ion-color-background: transparent; // Fondo transparente del botón
+    }
+  }
+  
+  ion-title {
+    font-size: 24px; // Tamaño de fuente del título
+    font-weight: bold; // Negrita
+    color: #333; // Color del título (negro)
+    text-align: center; // Alineación centrada
+    padding: 8px 0; // Espaciado interior
+  }
+  
+  ion-content {
+    --ion-background-color: #f4f4f4; // Color de fondo del contenido (gris claro)
+    --ion-color-contrast: #333; // Texto en negro en el contenido
+    text-align: center; // Alineación centrada
+    padding: 16px; // Espaciado interior
+  }
+  

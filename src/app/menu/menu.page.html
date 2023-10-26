@@ -1,0 +1,70 @@
+<ion-split-pane contentId="main">
+  
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+
+     
+    </ion-header>
+    <ion-card-header>
+      <ion-card-title>Bienvenido  {{ nombreUsuario }}!</ion-card-title>
+    </ion-card-header>
+    <ion-content>
+      <ion-list>
+        <ion-item (click)="opcionViajar('viajar')" class="custom-yellow">
+          <ion-icon name="golf-outline"slot="start"></ion-icon>
+          <ion-label>Viajar</ion-label>
+        </ion-item>
+        
+
+        
+        
+        <ion-item ><ion-icon name="earth-outline"slot="start"></ion-icon>
+          Mis viajes</ion-item>
+
+
+    
+
+
+        <ion-item >
+          <ion-icon name="key-outline" slot="start"></ion-icon>
+
+          Seguridad y protección </ion-item>
+
+        
+        <ion-item >
+          <ion-icon name="settings-outline" slot="start"></ion-icon>
+          Configuración
+        </ion-item>
+
+
+        
+
+
+        <ion-item >
+          <ion-icon name="hand-right-outline"slot="start"></ion-icon>
+          
+          Ayuda</ion-item>
+
+
+
+        <ion-item ><ion-icon name="construct-outline"slot="start"></ion-icon>Soporte</ion-item>
+
+        <ion-item (click)="opcionConductor('conductor')"class="custom-green">
+          <ion-icon name="car"slot="start"></ion-icon>
+          <ion-label>Ingresa como conductor </ion-label>
+
+        </ion-item>
+        
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item (click)="salir()" routerDirection="root" lines="none" detail="false">
+            <ion-icon slot="start" [name]="'exit-outline'"></ion-icon>
+            <ion-label>Salir</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+</ion-split-pane>
+

@@ -1,0 +1,77 @@
+ion-split-pane {
+  ion-menu {
+    ion-card-header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      ion-card-title {
+        font-size: 18px;
+        padding: 10px;
+        color: #fff; /* Letras blancas */
+        background-color: #000; /* Fondo negro */
+      }
+    }
+    ion-content {
+      ion-list {
+        ion-menu-toggle {
+          ion-item {
+            --ion-background-color: #f8f8f8;
+            border-radius: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  ion-router-outlet {
+    ion-header {
+      ion-toolbar {
+        --background: #000;
+        ion-title {
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+ion-item.custom-green {
+  --ion-background-color: #4CAF50; // 
+  padding: 8px 8px; //
+  border-radius: 4px; 
+  max-width: 600px; 
+
+  // Alinea verticalmente el contenido al centro
+  display: flex;
+  align-items: center;
+
+  ion-label {
+    border-radius: 10px; // Ajusta la cantidad de redondeo que desees
+    padding: 8px; // Ajusta el espaciado interior del texto
+    font-family: "texto", cursive; // Cambia la fuente del texto
+  }
+}
+/* custom-alert.scss */
+
+.custom-alert {
+  .alert-wrapper {
+    background-color: #fff; /* Fondo del cuadro de diálogo */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+
+  .alert-title {
+    font-size: 20px; /* Tamaño de la fuente del título */
+    font-weight: bold; /* Texto en negrita */
+  }
+
+  .alert-message {
+    font-size: 16px; /* Tamaño de la fuente del mensaje */
+  }
+
+  .alert-button {
+    color: #007aff; /* Color del botón */
+  }
+}

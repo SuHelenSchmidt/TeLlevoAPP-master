@@ -1,0 +1,66 @@
+/* Estilos personalizados para centrar el contenido */
+ion-content {
+  background-color: #000; /* Fondo negro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ion-card {
+  width: 90%; /* Ancho del card */
+  max-width: 400px; /* Ancho máximo del card */
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+ion-card-title {
+  background-color: #000; /* Fondo negro para el título */
+  color: #fff; /* Letras blancas para el título */
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+
+ion-card-content {
+  padding: 16px;
+}
+
+ion-item {
+  --ion-background-color: #f8f8f8; /* Fondo gris claro para los items */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+ion-input {
+  color: #000; /* Color de texto negro para los input */
+}
+
+ion-button {
+  background-color: #000; /* Fondo negro para los botones */
+  color: #fff; /* Letras blancas para los botones */
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Estilo para el enlace "¿Olvidaste tu contraseña?" */
+.no-style-link {
+  color: #000; /* Color de texto negro para el enlace */
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.no-style-link:hover {
+  text-decoration: underline; /* Subrayado en el hover del enlace */
+}
+
+/* Estilos para el botón "Cancelar" */
+.cancel-button {
+  background-color: #d9534f; /* Fondo rojo para el botón "Cancelar" */
+  color: #fff; /* Letras blancas para el botón "Cancelar" */
+  border-radius: 10px;
+  margin-top: 10px;
+}

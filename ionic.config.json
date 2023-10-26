@@ -1,0 +1,10 @@
+{
+  "name": "practicaionic",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
