@@ -7,7 +7,8 @@ import {
 } from '@angular/forms';
 import { AlertController, NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
-
+import { Storage } from '@ionic/storage';
+import { SQLite } from '@ionic-native/sqlite/ngx';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
