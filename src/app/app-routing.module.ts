@@ -10,21 +10,6 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    redirectTo: 'login',
-    pathMatch: 'full'
-  },
-  {
-    path: 'inicio',
-    redirectTo: 'inicio',
-    pathMatch: 'full'
-  },
-  {
-    path: '**',
-    redirectTo: 'e404',
-    pathMatch: 'full'
-  },
-  {
-    path: 'login',
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   }
   ,
