@@ -37,6 +37,10 @@ const routes: Routes = [
   {
     path: 'e404',
     loadChildren: () => import('./e404/e404.module').then( m => m.E404PageModule)
+  },
+  {
+    path: 'configuracion',
+    loadChildren: () => import('./configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
   }
 ];
 
