@@ -13,6 +13,7 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "^3.0.0-beta.0",
     "@angular/animations": "^16.0.0",
     "@angular/common": "^16.0.0",
     "@angular/compiler": "^16.0.0",
@@ -33,6 +34,7 @@
     "@ionic-native/sqlite": "^5.36.0",
     "@ionic/angular": "^7.0.0",
     "@ionic/storage-angular": "^4.0.0",
+    "@types/googlemaps": "^3.43.3",
     "cordova-plugin-googlemaps": "^2.7.1",
     "cordova-sqlite-storage": "^6.1.0",
     "ionicons": "^7.0.0",
