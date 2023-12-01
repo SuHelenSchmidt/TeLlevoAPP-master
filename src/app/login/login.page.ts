@@ -9,7 +9,6 @@ import { AlertController, NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
 import { SQLite } from '@ionic-native/sqlite/ngx';
-import { AuthService } from '../services/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -23,7 +22,7 @@ export class LoginPage implements OnInit {
     public alertController: AlertController,
     public navCtrl: NavController,
     private router: Router,
-    private authService: AuthService) { 
+    ) { 
 
     this.formularioLogin = this.fb.group({
       'nombre': new FormControl("", Validators.required),

@@ -1,11 +1,34 @@
+<!-- nombre-de-tu-pagina.page.html -->
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-button (click)="redirigirAlMenu()"></ion-button>
-
-    <ion-title>¿Compartir viaje ?</ion-title>
+    <ion-title>¿Compartir viaje?</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-title>¿Donde vamos?  ingresa destino </ion-title>
+  <ion-title>¿Dónde vamos? Ingresa destino</ion-title>
+
+  <ion-item>
+    <ion-label position="floating">Lugar de inicio</ion-label>
+    <ion-input [(ngModel)]="nuevoViaje.lugarInicio"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Lugar final</ion-label>
+    <ion-input [(ngModel)]="nuevoViaje.lugarFinal"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Asientos disponibles</ion-label>
+    <ion-input [(ngModel)]="nuevoViaje.asientosDisponibles" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Hora</ion-label>
+    <ion-input [(ngModel)]="nuevoViaje.hora"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="agregarViaje()">Agregar Viaje</ion-button>
 </ion-content>
