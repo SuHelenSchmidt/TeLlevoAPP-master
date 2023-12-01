@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SQLite } from '@ionic-native/sqlite/ngx';
 import { IonicStorageModule } from '@ionic/storage-angular'; 
 import { RouteReuseStrategy } from '@angular/router';
-import { AuthService } from './services/auth.service';
+import { ViajeService } from './services/viaje.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,8 +18,8 @@ import { AuthService } from './services/auth.service';
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    SQLite,
-    AuthService, 
+    SQLite,ViajeService
+   
   ],
   bootstrap: [AppComponent],
 })
