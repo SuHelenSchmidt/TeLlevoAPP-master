@@ -7,6 +7,8 @@ import {
   AbstractControl,
 } from '@angular/forms';
 import { AlertController, NavController } from '@ionic/angular';
+import { Storage } from '@ionic/storage';
+import { SQLite } from '@ionic-native/sqlite/ngx';
 
 @Component({
   selector: 'app-registro',

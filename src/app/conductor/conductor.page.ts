@@ -1,5 +1,8 @@
+// conductor.page.ts
+
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'; // Importa el Router
+import { Router } from '@angular/router';
+import { ViajeService } from '../services/viaje.service';
 
 @Component({
   selector: 'app-conductor',
@@ -7,13 +10,32 @@ import { Router } from '@angular/router'; // Importa el Router
   styleUrls: ['./conductor.page.scss'],
 })
 export class ConductorPage implements OnInit {
+  nuevoViaje: any = {
+    lugarInicio: '',
+    lugarFinal: '',
+    asientosDisponibles: 0,
+    hora: '',
+  };
 
-  constructor(private router: Router) { } // Inyecta el Router en el constructor
+  constructor(
+    private router: Router,
+    private viajeService: ViajeService
+  ) { }
 
   ngOnInit() {
   }
 
   redirigirAlMenu() {
-    this.router.navigate(['/menu']); // Reemplaza '/menu' con la ruta real a tu menú
+    this.router.navigate(['/menu']);
+  }
+
+  agregarViaje() {
+    this.viajeService.agregarViaje(this.nuevoViaje);
+    this.nuevoViaje = {
+      lugarInicio: '',
+      lugarFinal: '',
+      asientosDisponibles: 0,
+      hora: '',
+    };
   }
 }
