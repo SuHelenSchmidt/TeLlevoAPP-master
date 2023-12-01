@@ -3,7 +3,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ViajeService } from '../services/viaje.service';
-
 @Component({
   selector: 'app-conductor',
   templateUrl: './conductor.page.html',
