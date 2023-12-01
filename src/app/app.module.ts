@@ -19,8 +19,8 @@ import { IonicRouteStrategy } from '@ionic/angular';
     StatusBar,
     SplashScreen,
     SQLite, // Agrega SQLite a los providers
+    ViajeService,//agrega viajeService a los providers
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    ViajeService//agrega viajeService a los providers
   ],
   bootstrap: [AppComponent],
 })
